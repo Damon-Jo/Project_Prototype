@@ -2,6 +2,8 @@ import './../App.css';
 import {useEffect, useState} from "react";
 import data from "./../buildingData.js"
 
+import Input from './../components/Input.js';
+
 function Detail(){
 
     let [elements, setElements] = useState(data);
@@ -37,6 +39,7 @@ function Detail(){
             <h4 id="title-detail"> Building Data</h4>
             <div id="title-line"></div>
             <div className="grid-container">
+                <Input />
                 <div id="building-type-div" className="grid-item">
                     <label for="type-select" className="label-box">Building type</label>
                     <div className="input-group">
@@ -57,10 +60,11 @@ function Detail(){
                 {
                     elements.map(function(a,i){
                         return(
-                            <InputElement count = {count} incrementCount = {incrementCount} decrementCount = {decrementCount}elements = {a} i = {i}/>
+                            <InputElement count = {count} incrementCount = {incrementCount} decrementCount = {decrementCount} elements = {a} i = {i}/>
                         )
                     })
                 }
+
                 <div className="grid-item">
                     <label for="type-select" className="label-box">Name of the meters</label>
                     <div className="input-group">
@@ -79,6 +83,10 @@ function Detail(){
                     </div>                
                 </div>
             </div>
+            {
+
+            }
+
 
        
         </>
