@@ -1,6 +1,6 @@
 import './../App.css';
 import {useEffect, useState} from "react";
-import projectInfodata from "./../projectInfo.js"
+import projectInfodata from "./../data/projectInfo.js";
 
 import Input from './../components/Input.js';
 

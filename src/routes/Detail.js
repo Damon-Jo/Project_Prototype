@@ -1,6 +1,6 @@
 import './../App.css';
 import {useEffect, useState} from "react";
-import data from "./../buildingData.js"
+import data from "./../data/buildingData.js"
 
 import Input from './../components/Input.js';
 
