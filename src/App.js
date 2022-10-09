@@ -2,7 +2,7 @@ import './App.css';
 
 import Detail from './routes/Detail.js';
 import ProjectInfo from './routes/ProjectInfo.js';
-import Demo from './routes/Demo.js';
+import BuildingData from './routes/BuildingData.js';
 import OtherFeatures from './routes/OtherFeatures.js';
 import Input from './components/Input.js';
 
@@ -15,10 +15,10 @@ function App() {
       <Routes>
         
         
-        <Route path="/buildingData/" element={<Detail/>}/>
+        <Route path="/buildingData1/" element={<Detail/>}/>
         <Route path="/ProjectInformation/" element={<ProjectInfo/>}/>
         
-        <Route path="/demo/" element={<Demo/>}/>
+        <Route path="/buildingData/" element={<BuildingData/>}/>
         <Route path="/otherFeatures/" element={<OtherFeatures/>}/>
 {/* 
         <Route>

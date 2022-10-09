@@ -4,7 +4,7 @@ import buildingData from "./../data/buildingData2.js"
 
 import Input from './../components/Input.js';
 
-function Demo(){
+function BuildingData(){
 
     let [buildingElements, setBuildingElement] = useState(buildingData);
     
@@ -34,4 +34,4 @@ function Demo(){
 }
 
 
-export default Demo;
+export default BuildingData;
